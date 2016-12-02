@@ -79,17 +79,17 @@ export default class FoodsList extends React.Component {
             Animated.parallel([
                 Animated.timing(this.state.sortTypeViewY, {
                     toValue: FoodsList.showSortTypeView ? 0 : 1,
-                    duration: 500,
+                    duration: 150,
                 }),
                 Animated.timing(this.state.angleRotation, {
                     toValue: FoodsList.showSortTypeView ? 0 : 1,
-                    duration: 500,
+                    duration: 150,
                 })
             ]),
             // 2)遮盖层透明度
             Animated.timing(this.state.coverViewOpacity, {
                 toValue: FoodsList.showSortTypeView ? 0 : 1,
-                duration: 100,
+                duration: 10,
             })
         ]).start();
         // 改变排序视图状态
@@ -108,7 +108,7 @@ export default class FoodsList extends React.Component {
                     style={{
                         width: Common.window.width,
                         height: Common.window.height - 84,
-                        backgroundColor: 'rgba(131, 131, 131, 0.3)',
+                        backgroundColor: 'rgba(131, 131, 131, 0.8)',
                         opacity: this.state.coverViewOpacity,
                     }}
                 />

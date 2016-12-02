@@ -56,6 +56,8 @@ export default class Main extends React.Component {
         });
     }
 
+
+
     render() {
         
         const {Strolling} = this.props;
