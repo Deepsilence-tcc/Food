@@ -1,3 +1,4 @@
+
 ## iShiWuPai
 iShiWuPai是基于React Native和Redux实现的展示型美食类APP。持续更新中，欢迎一起讨论学习！
 
@@ -46,3 +47,5 @@ $ react-native run-ios
       "redux-thunk": "^2.1.0"
     },
 ```
+# Food
+
