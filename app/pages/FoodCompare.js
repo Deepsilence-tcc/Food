@@ -46,7 +46,7 @@ export default class FoodCompare extends React.Component {
         let nutritionList = [];
 
         // 已经选择了食物
-        if (rightNutritionLength != 0 || leftNutritionLength != 0) {
+        if (rightNutritionLength != 0 || 0 != 0) {
 
             // 右边的多
             if (rightNutritionLength > leftNutritionLength) {
